@@ -39,7 +39,8 @@ let speedtest = new FastSpeedtest({
 });
 
 speedtest.getSpeed().then(s => {
-    console.log(`Speed: ${s} Mbps`);
+    var fast = Math.floor(s)
+console.log(`Speed: ${fast} Mbps`);
 }).catch(e => {
     console.error(e.message);
 });
